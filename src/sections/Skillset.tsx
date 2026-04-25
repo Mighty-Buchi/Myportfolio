@@ -30,7 +30,7 @@ const SKILLS_DATA = {
         { name: 'Tailwind CSS', icon: <SiTailwindcss className="text-cyan-400" /> },
         { name: 'TypeScript', icon: <SiTypescript className="text-blue-600" /> },
         { name: 'JavaScript', icon: <SiJavascript className="text-yellow-400" /> },
-        { name: 'Framer Motion', icon: <SiFramer /> },
+        { name: 'Framer Motion', icon: <SiFramer className="text-purple-500" /> },
         { name: 'HTML', icon: <SiHtml5 className="text-orange-400 " /> },
         { name: 'CSS', icon: <FaCss3Alt size={30} className="text-blue-600 " /> },
     ],

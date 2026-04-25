@@ -25,7 +25,7 @@ const About = () => {
           <div className='text-center'>
             <p className='uppercase text-2xl font-bold text-[#222222] mb-2'>buchi ihiaso</p>
             <p className='text-[#7b7b7b] mb-3'>ihiasobuchi@gmail.com</p>
-            <button className='bg-black py-2 px-8 text-white rounded-full mb-3 flex items-center gap-2'>Download CV <span><MdDownload /></span> </button><br />
+            <button className='bg-black py-3 px-8 text-white rounded-full mb-3 flex items-center gap-2  hover:bg-white hover:text-black hover:border transition-all duration-200 ease-in-out hover:cursor-pointer'>Download CV <span><MdDownload /></span> </button><br />
           </div>
         </div>
 

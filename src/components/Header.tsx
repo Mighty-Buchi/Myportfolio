@@ -28,8 +28,8 @@ const Header = () => {
         <ul className='flex items-center '>
           <li className=' nav '><Link href="/">Home</Link></li>
           <li className=' nav '><Link href="/about">About</Link></li>
-          <li className=' nav'><Link href="/project">Project</Link></li>
-          <li className=' nav'><Link href="/workflow">Workflow</Link></li>
+          <li className=' nav'><Link href="/project">Projects</Link></li>
+          
           <li className=' nav'><Link href="/contact">Contact me!</Link></li>
         </ul>
       </nav>
@@ -45,8 +45,8 @@ const Header = () => {
       >
         <Link href="/" className='nav nav-mobile' onClick={() => setOpen(false)}>Home</Link>
         <Link href="/about" className='nav nav-mobile ' onClick={() => setOpen(false)}>About</Link>
-        <Link href="/project" className='nav nav-mobile' onClick={() => setOpen(false)}>Project</Link>
-        <Link href="/workflow" className='nav nav-mobile' onClick={() => setOpen(false)}>Workflow</Link>
+        <Link href="/project" className='nav nav-mobile' onClick={() => setOpen(false)}>Projects</Link>
+        
         <Link href="/contact" className='nav nav-mobile' onClick={() => setOpen(false)}>Contact me!</Link>
       </div>
     </div>
