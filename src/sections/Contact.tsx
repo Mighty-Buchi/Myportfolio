@@ -84,7 +84,7 @@ const Contact = () => {
             <div className="flex flex-col gap-2">
               <label className="text-sm font-semibold text-gray-700 ml-1">Message</label>
               <textarea 
-                rows="5"
+                rows={5}
                 placeholder="Tell me about your project..."
                 className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all resize-none"
               ></textarea>
