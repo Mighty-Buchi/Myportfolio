@@ -28,6 +28,8 @@ import Hero from '../sections/Hero'
 import About from '../sections/About'
 import Skillset from '../sections/Skillset'
 import Projects from '../sections/Projects'
+import Testimonies from '../sections/Testimonies'
+import Contact from '../sections/Contact'
 
 const page = () => {
   return (
@@ -36,6 +38,8 @@ const page = () => {
       <About/>
       <Skillset/>
       <Projects/>
+      <Testimonies/>
+      <Contact/>
     </div>
   )
 }

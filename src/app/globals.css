@@ -6,7 +6,7 @@
 }
 @layer components{
     .nav{
-        @apply py-1 px-3 mx-0.5 text-[17px]  font-medium  rounded-full transition duration-100 ease-in-out hover:underline hover:underline-offset-15;
+        @apply py-1 px-3 mx-0.5 text-[17px]  font-medium  rounded-full transition duration-100 ease-in-out hover:underline hover:underline-offset-10;
     }
     .nav-mobile{
         @apply hover:underline hover:underline-offset-15 ;
@@ -15,6 +15,6 @@
         @apply border-none shadow-sm p-1 px-2 rounded-2xl items-center justify-center
     }
     .skills{
-        @apply text-black text-xl md:text-2xl
+        @apply text-black text-xl md:text-2xl;
     }
 }
