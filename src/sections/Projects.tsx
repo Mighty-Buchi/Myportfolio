@@ -33,6 +33,7 @@ const myProjects = [
          ✅Login page (phone validation + mock auth).
          ✅Main page (API list + live search).
          ✅ Detail page (dynamic item info).
+         ✅ Filter search
          🛠️ Used React Hooks, API integration & clean UI`,
     image: "/mock.png",
     stack: ["html", "css", "Framer Motion"],
@@ -43,7 +44,7 @@ const myProjects = [
     id: 3,
     title: "TaskFlow Dashboard",
     description: "An analytics and task management platform providing real-time data insights.",
-    image: "/favy.png",
+    image: "/dark.png",
     stack: ["TypeScript", "Next.js", "Framer Motion"],
     liveLink: "https://taskflow.example.com",
     // githubLink: "https://github.com/yourname/taskflow"
@@ -52,7 +53,7 @@ const myProjects = [
     id: 4,
     title: "TaskFlow Dashboard",
     description: "An analytics and task management platform providing real-time data insights.",
-    image: "/favy.png",
+    image: "/dark.png",
     stack: ["TypeScript", "Next.js", "Framer Motion"],
     liveLink: "https://taskflow.example.com",
     // githubLink: "https://github.com/yourname/taskflow"

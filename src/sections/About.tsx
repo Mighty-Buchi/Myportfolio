@@ -39,9 +39,9 @@ const About = () => {
         <div className='flex flex-col gap-5'>
           <div className='flex flex-col bg-white border border-white shadow-sm rounded-2xl p-4'>
             <h1 className='flex flex-col md:flex-row font-bold text-3xl text-[#222222] items-center  md:gap-3 mb-3'>About Me <small className='text-sm font-normal text-blue-500 flex items-center gap-1'> <span><MdEventAvailable size={20} /></span> open to work</small></h1>
-            <p className='text-sm md:text-base leading-relaxed mb-3 indent-2'>"I am a Frontend Developer dedicated to building high-performance, visually stunning web experiences. My works live at the intersection of clean code and fluid motion, utilizing React, Next.js, and Tailwind CSS to turn complex ideas into seamless digital products. </p>
+            <p className='text-sm md:text-base text-black/90 tracking-wide leading-relaxed mb-3 indent-2'>"I'm a Frontend Developer dedicated to building high-performance, visually stunning web experiences. My works live at the intersection of clean code and fluid motion, utilizing React, Next.js, and Tailwind CSS to turn complex ideas into seamless digital products. </p>
 
-            <p className='text-sm md:text-base leading-relaxed mb-3 indent-2'>I specialize in crafting everything from high-conversion e-commerce platforms,web3 pages,SAAS softwares to sleek professional portfolios. With a deep focus on modern UI practices, I don't just build functional websites,rather, I create interfaces that feel alive and intuitive."</p>
+            <p className='text-sm md:text-base  tracking-wide leading-relaxed mb-3 indent-2'>I specialize in crafting everything from high-conversion e-commerce platforms,web3 pages,SAAS softwares to sleek professional portfolios. With a deep focus on modern UI practices, I don't just build functional websites,rather, I create interfaces that feel alive and intuitive."</p>
           </div>
           <div className='flex flex-col bg-white border border-white shadow-sm rounded-2xl p-4'>
             <h3 className='tracking-widest text-sm text-[#7B7B7B] font-bold mb-4'>LATEST ROLES</h3>
