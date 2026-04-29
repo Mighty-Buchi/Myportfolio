@@ -191,7 +191,7 @@ const Testimonies = () => {
     return (
         <div className="max-w-7xl mx-auto px-4 py-16">
             <h2 className="text-3xl font-bold text-[#222222] mb-12">
-                Testimonies<span className="text-blue-600">.</span>
+                Testimonies
             </h2>
 
             <div className="relative overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] group">

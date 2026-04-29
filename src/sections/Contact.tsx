@@ -10,7 +10,7 @@ const Contact = () => {
         <div className="space-y-7">
           <div className=''>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Get in Touch<span className="text-blue-600">.</span>
+              Get in Touch
             </h2>
             <p className="text-gray-600 text-[14px] md:text-lg max-w-md">
               Have a project in mind or just want to say hi? Feel free to reach out. I'm always open to discussing new projects and creative ideas.

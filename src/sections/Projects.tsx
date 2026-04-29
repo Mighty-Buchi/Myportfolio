@@ -64,14 +64,14 @@ const Projects = () => {
   return (
     <section className=" mx-auto px-4  py-16 bg-gray-100">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold text-[#222222] mb-12 sticky top-15 md:static" >
-          Projects<span className="text-blue-600">.</span>
+        <h2 className="text-3xl font-bold text-[#222222] mb-12  " >
+          Projects
         </h2>
 
 
         <div className="flex flex-col md:grid md:grid-cols-2 gap-10  ">
           {myProjects.map((project) => (
-            <div key={project.id} className="sticky top-27 md:static  group bg-white rounded-3xl p-4 md:p-6 border border-gray-300 shadow-md hover:shadow-lg transition-all duration-200">
+            <div key={project.id} className="  group bg-white rounded-3xl p-4 md:p-6 border border-gray-300 shadow-md hover:shadow-lg transition-all duration-200">
 
 
               <div className="rounded-2xl overflow-hidden mb-5 bg-gray-50 border border-gray-200  ">

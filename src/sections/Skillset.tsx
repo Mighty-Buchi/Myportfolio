@@ -56,7 +56,7 @@ const Skillset = () => {
     return (
         <section className="bg-gray-100 py-15 mt-3 px-5">
             <div className="max-w-7xl mx-auto">
-                <h2 className="text-3xl font-bold text-[#222222] mb-5">Skills<span className="text-blue-600">.</span></h2>
+                <h2 className="text-3xl font-bold text-[#222222] mb-5">Skills</h2>
 
                 <div className="flex flex-wrap gap-3 mb-2 border-b border-gray-200 pb-4">
                     {Object.keys(SKILLS_DATA).map((tab) => (
