@@ -89,11 +89,11 @@ const Header = () => {
         </span>
       </div>
 
-      <div className='hidden pl-10 font-bold justify-center items-center text-2xl leading-none md:flex'>
+      <div className='hidden pl-10 font-bold justify-center text-black items-center text-2xl leading-none md:flex'>
         <Link href="/">DEVV_ <span className='text-blue-600'>EL</span></Link>
       </div>
 
-      <nav className='hidden md:flex'>
+      <nav className='hidden md:flex text-black'>
         <ul className='flex items-center'>
           <li className='nav'><Link href="/">Home</Link></li>
           {/* <li className='nav'><Link href="/about">About</Link></li> */}
@@ -103,13 +103,13 @@ const Header = () => {
       </nav>
 
       
-      <div className="md:hidden relative z-60">
+      <div className="md:hidden text-black  relative z-60">
         <Hamburger size={19} toggled={open} toggle={setOpen} />
       </div>
 
       
       <div
-        className={`fixed top-0 right-0 h-screen w-[250px] bg-white backdrop-blur-xl border-l border-gray-100 flex flex-col pt-24 gap-6 items-center shadow-2xl transform transition-transform duration-300 ease-in-out z-50 md:hidden ${
+        className={`fixed top-0 right-0 h-screen w-[250px] bg-white text-black backdrop-blur-xl border-l border-gray-100 flex flex-col pt-24 gap-6 items-center shadow-2xl transform transition-transform duration-300 ease-in-out z-50 md:hidden ${
           open ? "translate-x-0" : "translate-x-full"
         }`}
       >

@@ -1,11 +1,17 @@
+"use client"
 import React from 'react';
 import Link from 'next/link';
 import { FaGithub, FaTwitter, FaWhatsapp, FaTelegram, FaLinkedin } from "react-icons/fa";
 import Copyright from '../sections/Copyright';
+import { motion } from 'framer-motion'
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white min-h-[220px] max-w-[1440px] mx-auto  grid  grid-cols-1 md:grid-cols-3 gap-8 p-5">
+    <motion.footer
+      initial={{ opacity: 0, rotateY: "90deg" }}
+      whileInView={{ opacity: 1, rotateY: 0 }}
+      transition={{ duration: 1, }}
+      className="bg-black text-white min-h-[220px] max-w-[1440px] mx-auto  grid  grid-cols-1 md:grid-cols-3 gap-8 p-5">
 
       <div className="flex-1 p-4 flex flex-col gap-4 min-w-[300px] md:min-w-0">
         <h1 className="text-xl md:text-2xl font-bold">
@@ -108,7 +114,7 @@ const Footer = () => {
       <div className="col-span-full">
         <Copyright />
       </div>
-    </footer>
+    </motion.footer>
   );
 };
 

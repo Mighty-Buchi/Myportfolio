@@ -1,9 +1,10 @@
-
+"use client";
 import React from 'react';
 // Import icons from a library like 'react-icons'
 import { SiNextdotjs, SiReact, SiTailwindcss, SiTypescript, SiFramer, SiCss, SiHtml5 } from 'react-icons/si';
 import { ExternalLink, } from 'lucide-react'; // For the link icons
 import { FaCss3Alt } from 'react-icons/fa6';
+import { motion } from 'framer-motion';
 
 const techIcons = {
   "Next.js": <SiNextdotjs className="w-6 h-6 text-black" />,
@@ -11,8 +12,8 @@ const techIcons = {
   "Tailwind": <SiTailwindcss className="w-6 h-6 text-cyan-400" />,
   "TypeScript": <SiTypescript className="w-6 h-6 text-blue-600" />,
   "Framer Motion": <SiFramer className="w-6 h-6 text-purple-500" />,
-  "css":<FaCss3Alt className="w-6 h-6 text-blue-600"/>,
-  "html":<SiHtml5 className="w-6 h-6 text-orange-400"/>
+  "css": <FaCss3Alt className="w-6 h-6 text-blue-600" />,
+  "html": <SiHtml5 className="w-6 h-6 text-orange-400" />
 };
 
 
@@ -42,9 +43,9 @@ const myProjects = [
   },
   {
     id: 3,
-    title: "TaskFlow Dashboard",
-    description: "An analytics and task management platform providing real-time data insights.",
-    image: "/dark.png",
+    title: "SreamLine Media Engine",
+    description: `A high-performance media discovery engine built with, featuring a responsive masonry grid and a custom-built video player modal. This project prioritizes security and performance featuring a dynamic "Favorites" system powered by Local Storage for persistent user sessions and a real-time client-side search filter for instant content discovery.`,
+    image: "/vid.png",
     stack: ["TypeScript", "Next.js", "Framer Motion"],
     liveLink: "https://taskflow.example.com",
     // githubLink: "https://github.com/yourname/taskflow"
@@ -53,7 +54,7 @@ const myProjects = [
     id: 4,
     title: "TaskFlow Dashboard",
     description: "An analytics and task management platform providing real-time data insights.",
-    image: "/dark.png",
+    image: "/interior.png",
     stack: ["TypeScript", "Next.js", "Framer Motion"],
     liveLink: "https://taskflow.example.com",
     // githubLink: "https://github.com/yourname/taskflow"
@@ -69,9 +70,16 @@ const Projects = () => {
         </h2>
 
 
-        <div className="flex flex-col md:grid md:grid-cols-2 gap-10  ">
+        <motion.div
+          initial={{ opacity: 0, translateY: 100 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 1, }}
+          className="flex flex-col md:grid md:grid-cols-2 gap-10  ">
+          
           {myProjects.map((project) => (
-            <div key={project.id} className="  group bg-white rounded-3xl p-4 md:p-6 border border-gray-300 shadow-md hover:shadow-lg transition-all duration-200">
+            <motion.div key={project.id}
+             
+              className="  group bg-white rounded-3xl p-4 md:p-6 border border-gray-300 shadow-md hover:shadow-lg transition-all duration-200">
 
 
               <div className="rounded-2xl overflow-hidden mb-5 bg-gray-50 border border-gray-200  ">
@@ -102,7 +110,7 @@ const Projects = () => {
 
               <div className="flex flex-wrap  items-center justify-center ">
                 <a
-                 target="_blank" rel="noopener noreferrer"
+                  target="_blank" rel="noopener noreferrer"
                   href={project.liveLink}
                   className="flex items-center gap-2 justify-center  bg-black text-white py-3 px-10 md:py-4 md:px-12 rounded-full font-semibold  hover:bg-white hover:text-black hover:border-black border border-transparent  transition text-sm"
                 >
@@ -115,9 +123,9 @@ const Projects = () => {
                 View Code <ExternalLink size={18} />
               </a> */}
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
